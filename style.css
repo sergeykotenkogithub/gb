@@ -1,0 +1,36 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    padding-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 1200px;
+}
+section {
+    flex: 1 1 auto;
+    padding: 20px 0;
+}
+
+footer {
+    padding: 20px 0;
+}
