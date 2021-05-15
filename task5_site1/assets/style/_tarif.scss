@@ -1,0 +1,157 @@
+.tarif {
+  &__mainTitle {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 47px;
+    line-height: 57px;
+    color: #100a30;
+    margin-top: 212px;
+    margin-bottom: 58px;
+    letter-spacing: 0.4px;
+    width: 594px;
+    padding-left: 21px;
+    text-align: center;
+    span {
+      margin-left: -20px;
+    }
+  }
+
+  &_description {
+    background: rgba(16, 10, 48, 0.03);
+    border-radius: 8px;
+    height: 148px;
+    max-width: 395px;
+    ul {
+        padding-left: 25px;
+        padding-top: 10px;
+      li {
+        display: flex;
+        padding-top: 16px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 22px;
+        color: #100a30;      
+      }
+    }
+  }
+
+  &__text {
+    background: url("../assets/img/tarif1.png") no-repeat;
+    width: 395px;
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 26px;
+    padding-left: 30px;
+  }
+
+  &__text2 {
+    background: url("../assets/img/tarif2.png") no-repeat;
+  }
+
+  &__text3 {
+    background: url("../assets/img/tarif3.png") no-repeat;
+  }
+
+  &__main {      
+    padding-bottom: 11px;
+    h2 {
+      font-size: 20px;
+      line-height: 24px;
+      color: #ffffff;
+      font-weight: bold;
+      line-height: 36px;
+    }
+    p {
+      font-size: 24px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+    .tarif__p2 {
+      color: #19c787;
+    }
+    .tarif__p3 {
+      color: #ff9f1c;
+    }
+  }
+  &__price {
+    font-size: 46px;
+    line-height: 52px;
+    color: #ffffff;
+    padding-left: 130px;
+    span {
+      font-size: 15px;
+      line-height: 32px;
+      text-align: right;
+      color: #ffffff;
+      padding-left: 10px
+    }
+  }
+  &__price3 {
+    padding-left: 139px;  
+  }
+
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.yes {   
+    width: 20px;
+    height: 22px;
+    padding-left: 30px;
+}
+
+.yes3 {
+    background: url("../assets/img/yes2.svg") no-repeat;
+}
+.yes2 {
+    background: url("../assets/img/yes3.svg") no-repeat;
+}
+.yes1 {
+    background: url("../assets/img/yes1.svg") no-repeat;
+}
+
+
+
+
+@media (max-width: 1150px) {
+  .tarif__card {
+    justify-content: space-around;
+  }
+  .tarif__choose {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  .tarif__text {
+    width: 310px;
+  }
+
+  .tarif__title {
+    font-size: 36px;
+    line-height: 50px;
+    margin-top: 51px;
+    margin-bottom: 8px;
+  }
+  .tarif__price {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 325px) {
+  .tarif__title {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .tarif__choose {
+      padding: 15px 0;
+  }
+}

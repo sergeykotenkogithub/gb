@@ -1,0 +1,144 @@
+.footer {
+  padding-top: 55px;
+  padding-bottom: 57px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__wrapper {
+    background: #f8f8f9;
+    margin-top: 121px;
+  }
+
+  ._footer__paddingRight {
+    padding-right: 97px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+  }
+
+  &__text1 {
+    padding-top: 24px;
+  }
+
+  &__iconsWrapper {
+    padding-top: 28px;
+  }
+
+  &__icon {
+    padding-right: 19px;
+  }
+
+  &__div {
+    ul {
+      li {
+        font-size: 15px;
+        line-height: 24px;
+        padding-bottom: 6px;
+
+        a {
+          color: #4c4764;
+          &:hover {
+            color: #624de3;            
+          }
+        }
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__mainText {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #100a30;
+    padding-bottom: 9px;
+  }
+
+  &__textWrapper {
+    a {
+      color: #4c4764;
+      &:hover {
+        color: #624de3;
+      }
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .footer {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 1025px) {
+  ._footer__paddingRight {
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width: 780px) {
+  .footer {
+    padding-right: 40px;
+    padding-left: 40px;
+    justify-content: center;
+  }
+  .footer__div {  
+    padding-left: 40px;  
+  }
+  ._footer__paddingRight {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer {
+    justify-content: flex-start;
+  }
+  .footer__div {
+    padding-right: 30px;
+  }
+  ._footer__div2,
+  .footer__logo {
+    padding-left: 50px;
+  }
+  ._footer__div2 {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 601px) {
+  ._footer__div2,
+  .footer__logo {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 540px) {
+  ._footer__div2,
+  .footer__logo {
+    padding-left: 0px;
+  }
+  .footer__div {
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__div {
+    padding-top: 30px;
+    padding-left: 0px;
+    display: block;
+  }
+  .footer__logo,
+  .footer__div {
+    flex: 1 1 100vw;
+    text-align: center;
+  }
+}
