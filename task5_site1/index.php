@@ -2,7 +2,7 @@
 
 // Render
 
-function renderTemplate($page, $header = '', $pageTitle = '', $price = '', $comments = '',  $footer = '', $title = '', $btnPagetitle_1 = '', $btnPagetitle_2 = '', $logo = '')
+function renderTemplate($page, $header, $pageTitle = '', $price = '', $comments = '',  $footer = '', $title = '', $btnPagetitle_1 = '', $btnPagetitle_2 = '', $logo = '')
 {
     ob_start();
     include 'templates/' . $page . ".php";
