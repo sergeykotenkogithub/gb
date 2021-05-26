@@ -6,7 +6,14 @@ body {
 	padding-bottom: 1px;
 	padding-top: 20px;
 }
-.gallery img{
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 10px;
+}
+
+.imgBig {
 	margin:5px;
 	border:3px solid #fff;
 }
@@ -194,3 +201,96 @@ a {
 .menu__link:last-child {
 	border: none;
 }
+
+.gallerySort {
+	display: none;
+	flex-wrap: wrap;
+	padding: 0 10px;
+}
+.styleIcon {
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 3px solid white;
+	background-position: center;
+	background-size: 32px;
+	background-repeat: no-repeat;
+	margin-left: 15px;
+	transition: all 0.5s;
+	display: flex;
+	margin-top: 15px;
+}
+.sort {
+	margin-right: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sort img {
+	width: 22px;
+}
+.sortName {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.sortName img {
+	width: 35px;
+}
+
+.styleIcon:hover {
+	color: darkgray;
+	border: 3px solid darkgray;
+	background-color: darkgray;
+}
+
+.del {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: right;
+}
+
+.imgWrapper {
+	position: relative;
+}
+
+.delete {
+	width: 18px;
+	padding: 15px;
+}
+
+.newsWrapper {
+	width: 858px;
+	margin: 0 auto;
+	color: #CCC;
+	box-shadow: 0 0px 22px #ccc;
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.news {
+	padding: 10px 0;
+}
+
+.news a {
+	border-bottom: 1px dashed white;
+}
+
+/* При наведение появляется корзина*/
+
+.del {
+	display: none;
+}
+
+.imgWrapper:hover .del {
+	display: block;
+}
+

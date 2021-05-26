@@ -15,3 +15,20 @@ function uploadFile(file) {
     }
     reader.readAsDataURL(file);
 }
+
+// Сортировка
+
+let sort = document.querySelector('.sort') //
+let sortName = document.querySelector('.sortName') //
+let gallery = document.querySelector('.gallery')
+let gallerySort = document.querySelector('.gallerySort')
+
+sort.addEventListener('click',evt => {
+    gallerySort.style.display = 'flex';
+    gallery.style.display = 'none';
+})
+
+sortName.addEventListener('click',evt => {
+    gallerySort.style.display = 'none';
+    gallery.style.display = 'flex';
+})
