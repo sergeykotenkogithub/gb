@@ -1,0 +1,296 @@
+body {
+	background: #444 url('img/body.jpg');
+	color: #444;
+	font: normal 1.2em Verdana,Arial,sans-serif;
+	height: 100%;
+	padding-bottom: 1px;
+	padding-top: 20px;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 10px;
+}
+
+.imgBig {
+	margin:5px;
+	border:3px solid #fff;
+}
+a.photo:hover img{
+	border:3px solid #034F80;
+}
+#main {
+	width:858px;
+	margin:0 auto;
+	color: #CCC;
+	box-shadow: 0 0px 22px #ccc;
+	border-radius: 10px;
+}
+.post_title h2 {
+	font: normal 2em Arial,sans-serif;
+	margin: 0;
+	padding: 0;
+	color: white;
+	padding: 10px 0 10px 30px;
+}
+
+/* Загрузка */
+
+
+.upload {
+	display: flex;
+	width: 858px;
+	margin: 20px auto;
+	border-radius: 10px;
+	box-shadow: 0 0px 22px #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.uploadForm {
+	display: flex;
+	padding: 15px;
+}
+
+.colorForm {
+	color: aliceblue;
+}
+
+/*Стилизация кнопки инпут*/
+
+input[type=file] {
+	display: none;
+}
+
+label {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 3px solid white;    
+	margin-right: 15px;
+	transition: all 0.5s;
+}
+
+label:hover {
+	border: 3px solid darkgray;
+	background-color: darkgray;
+}
+
+.line1 {
+	position: absolute;
+	width: 20px;
+	height: 3px;
+	background: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 100px;
+}
+.line2 {
+	/*content: '';*/
+	display: block;
+	width: 3px;
+	height: 30px;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 100px;
+}
+
+/*Кнопка*/
+button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+}
+
+
+.btn {
+	width: 56px;
+	height: 56px;
+	background-color: transparent;
+	background: url(img/add.svg);
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 3px solid white;
+	background-position: center;
+	background-size: 32px;
+	background-repeat: no-repeat;
+	margin-left: 15px;
+	transition: all 0.5s;
+}
+
+.btn:hover {
+	color: darkgray;
+	border: 3px solid darkgray;
+	background-color: darkgray;
+}
+
+.fileP img {
+	display: inline-block;
+	max-width: 100px;
+}
+
+/* Меню */
+
+menu {
+	display: flex;
+	width: 858px;
+	margin: 20px auto;
+	border-radius: 10px;
+	box-shadow: 0 0px 22px #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+li {
+	list-style-type: none;
+}
+
+.menu__wrapper {
+	display: flex;
+}
+
+.menu__wrapper li {
+	padding: 0 30px 0 30px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.welcome {
+	display: flex;
+	width: 858px;
+	margin: 20px auto;
+	border-radius: 10px;
+	box-shadow: 0 0px 22px #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+	justify-content: center;
+	height: 300px;
+	align-items: center;
+	color: white;
+}
+
+.menu__link {
+	padding: 10px;
+	border-right: 1px solid white;
+	font-size: 30px;
+}
+.menu__link a {
+	transition: all 0.5s;
+}
+
+.menu__link a:hover {
+	color: darkgray;
+}
+
+
+.menu__link:last-child {
+	border: none;
+}
+
+.gallerySort {
+	display: none;
+	flex-wrap: wrap;
+	padding: 0 10px;
+}
+.styleIcon {
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 3px solid white;
+	background-position: center;
+	background-size: 32px;
+	background-repeat: no-repeat;
+	margin-left: 15px;
+	transition: all 0.5s;
+	display: flex;
+	margin-top: 15px;
+}
+.sort {
+	margin-right: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sort img {
+	width: 22px;
+}
+.sortName {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.sortName img {
+	width: 35px;
+}
+
+.styleIcon:hover {
+	color: darkgray;
+	border: 3px solid darkgray;
+	background-color: darkgray;
+}
+
+.del {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: right;
+}
+
+.imgWrapper {
+	position: relative;
+}
+
+.delete {
+	width: 18px;
+	padding: 15px;
+}
+
+.newsWrapper {
+	width: 858px;
+	margin: 0 auto;
+	color: #CCC;
+	box-shadow: 0 0px 22px #ccc;
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.news {
+	padding: 10px 0;
+}
+
+.news a {
+	border-bottom: 1px dashed white;
+}
+
+/* При наведение появляется корзина*/
+
+.del {
+	display: none;
+}
+
+.imgWrapper:hover .del {
+	display: block;
+}
+
