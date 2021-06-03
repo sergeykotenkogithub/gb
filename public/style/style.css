@@ -128,7 +128,7 @@ button {
 	width: 56px;
 	height: 56px;
 	background-color: transparent;
-	background: url(img/add.svg);
+	background: url(../img/add.svg);
 	display: inline-block;
 	cursor: pointer;
 	border-radius: 15px;
@@ -162,6 +162,7 @@ menu {
 	padding: 10px;
 	box-sizing: border-box;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 li {
@@ -172,10 +173,11 @@ li {
 	display: flex;
 	flex-wrap: wrap;
 	padding-left: 0;
+	justify-content: center;
 }
 
 .menu__wrapper li {
-	padding: 5px 30px 5px 30px;
+	padding: 5px 30px 15px 30px;
 }
 
 a {
@@ -199,15 +201,14 @@ a {
 
 .menu__link {
 	padding: 10px;
-	border-right: 1px solid white;
 	font-size: 27px;
 }
 .menu__link a {
-	transition: all 0.5s;
+	transition: color 0.5s;
 }
 
 .menu__link a:hover {
-	color: darkgray;
+	color: white;
 }
 
 
@@ -328,12 +329,22 @@ a {
 	border: 1px solid white;
 	padding: 10px;
 	border-radius: 50px;
+	display: inline-block;
+	color: darkgray;
+	transition: color 0.5s;
+	box-shadow: 2px 4px 0px #ccc;
 }
+
+.buy:hover {
+	color: white;
+}
+
 
 /* Каталог */
 
 .catalogWrapper {
 	display: flex;
+	padding: 0 50px;
 }
 
 .catalog {
@@ -346,6 +357,7 @@ a {
 	align-items: center;
 	padding: 20px 0;
 	border-radius: 30px;
+	box-shadow: 7px 6px 0px #ccc;
 }
 
 .price {
@@ -357,9 +369,195 @@ a {
 }
 
 .active a{
+	color: white;
+}
+
+.noactive a {
 	color: darkgray;
 }
 
 .result {
 	width: 190px;
+}
+
+.basket {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.basket div {
+	padding-right: 10px;
+}
+
+.basket__del {
+	margin-bottom: 18px;
+}
+
+.basket__name {
+	width: 90px;
+}
+
+.total {
+	padding-top: 30px;
+}
+
+.order {
+	padding: 35px 0 25px 0;
+}
+
+.order a {
+	padding: 10px;
+	border: 1px solid darkgray;
+	border-radius: 50px;
+	transition: color 0.5s;
+	color: darkgray;
+	box-shadow: 2px 4px 0px #ccc;
+}
+
+.order a:hover {
+	color: white;
+	border: 1px solid white;
+}
+
+.orderBuy form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.formOrder input {
+	margin-top: 20px;
+	width: 200px;
+	height: 40px;
+	background: transparent;
+	color: white;
+	font-size: 16px;
+	border: 1px solid white;
+	padding: 5px 25px;
+	margin: 20px;
+}
+
+.thanks {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.thanks__ok{
+	font-size: 40px;
+	text-align: center;
+}
+
+.thanks__text {
+	padding-left: 45px;
+	padding-top: 28px;
+	padding-bottom: 20px;
+	line-height: 28px;
+}
+
+.basket__price {
+	width: 75px;
+	text-align: center;
+}
+
+.buySubmit {
+	display: flex;
+	align-items: center;
+}
+
+.buySubmit div {
+	padding-left: 25px;
+}
+
+.countBasket {
+	color: white;
+	position: absolute;
+	right: 66px;
+	top: 92px;
+	width: 60px;
+}
+
+.adminPanel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 10px;
+	font-size: 27px;
+}
+
+.adminPanel a {
+	color: darkgray;
+	transition: color 0.5s;
+}
+
+.adminPanel a:hover {
+	color: white;
+}
+
+.notAccess {
+	text-align: center;
+}
+
+.logout {
+
+}
+
+
+.btnAll {
+	margin-top: 15px;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 50px;
+	display: inline-block;
+	color: darkgray;
+	transition: color 0.5s;
+	box-shadow: 2px 4px 0px #ccc;
+}
+
+.btnAll:hover {
+	color: white;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+}
+
+.login__text {
+	width: 200px;
+	height: 40px;
+	background: transparent;
+	color: white;
+	font-size: 22px;
+	border: 1px solid white;
+	padding: 5px 25px;
+	margin: 8px;
+}
+
+.save {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.login__checkbox {
+	width: 45px;
+	padding: 28px;
+	height: 25px;
+}
+
+.login__submit {
+	margin-top: 24px;
+	width: 252px;
+	height: 40px;
+	background: transparent;
+	color: white;
+	font-size: 16px;
+	border: 1px solid white;
+	/* padding: 5px 25px; */
+	margin: 8px;
 }

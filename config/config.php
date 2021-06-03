@@ -33,18 +33,22 @@ define('DB', 'gallerybase');
 include ROOT . "/engine/controller.php"; // Контролер
 include ROOT . "/engine/db.php"; // Подключение к базе данных
 include ROOT . "/engine/render.php"; // Прорисовка
+include ROOT . "/engine/menu.php"; // Меню
 
-// Модули
+// Модели
 
-include ROOT . "/module/menu.php"; // Меню
-include ROOT . "/module/feedback.php";  // Отзывы
-include ROOT . "/module/catalog.php"; // Каталог
-include ROOT . "/module/news.php"; // Новости
-include ROOT . "/module/classSimpleImage.php"; // Библиотека которая делает resize
-include ROOT . "/module/calculator.php"; // Калькулятор
+include ROOT . "/models/feedback.php";  // Отзывы
+include ROOT . "/models/goods.php"; // Каталог
+include ROOT . "/models/news.php"; // Новости
+include ROOT . "/models/classSimpleImage.php"; // Библиотека которая делает resize
+include ROOT . "/models/calculator.php"; // Калькулятор
+include ROOT . "/models/auth.php"; // Калькулятор
+include ROOT . "/models/basket.php"; // Корзина
+include ROOT . "/models/order.php"; // Заказы
+include ROOT . "/models/admin.php"; // Заказы
 
-// Всё что относится к модулю галерея
+// Всё что относится к модели: "gallery"
 
-include ROOT . "/module/gallery/fileImg.php"; // Всё что относится к загрузке и удалению
-include ROOT . "/module/gallery/uploadFile.php"; // Проверка на загрузку файла
-include ROOT . "/module/gallery/dbGallery.php"; // Всё что связоно с запросами к галереи
+include ROOT . "/models/gallery/fileImg.php"; // Всё что относится к загрузке и удалению
+include ROOT . "/models/gallery/uploadFile.php"; // Проверка на загрузку файла
+include ROOT . "/models/gallery/dbGallery.php"; // Всё что связоно с запросами к галереи

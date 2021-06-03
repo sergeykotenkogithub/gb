@@ -24,12 +24,20 @@ $menu = [
         "href" => "/calculatorOperate",
     ],
     [
-        "title" => "Сatalog",
-        "href" => "/catalog",
+        "title" => "СalcAjax",
+        "href" => "/calcAjax",
     ],
     [
         "title" => "Feedback",
         "href" => "/feedback",
+    ],
+    [
+        "title" => "Goods",
+        "href" => "/goods",
+    ],
+    [
+        "title" => "Basket",
+        "href" => "/basket",
     ],
 ];
 
